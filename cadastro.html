@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleCadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <header class="titulo">
+        <h1>
+            Cadastre-se
+        </h1>
+        
+    </header>
+
+    
+
+    <div class="container">
+        
+        <div class="formulario">    
+            <img class="imagem" src="imagem/pngwing.com.png" alt="">
+            
+            <form action="#">
+                <div class="grupo-input">
+                    
+                    <input id="firstname" type="text" name="name" placeholder="Digite seu primeiro nome" required>
+                </div>
+                <div class="grupo-input">
+                    
+                    <input id="lastname" type="text" name="name" placeholder="Digite seu Sobrenome" required>
+                </div>
+
+                <div class="grupo-input">
+                    
+                    <input id="email" type="email" name="email" placeholder="Digite seu E-mail" required>
+                </div>
+
+                <div class="grupo-input">
+                    
+                    <input id="number" type="number" name="number" placeholder="(XX) XXXXX-XXXX" required>
+                </div>
+
+                <div class="grupo-input">
+                    
+                    <input id="password" type="password" name="password" placeholder="Digite sua Senha" required>
+                </div>
+
+                <div class="grupo-input">
+                    
+                    <input id="confirmpassword" type="password" name="confirmpassword" placeholder="Confirme sua Senha" required>
+                </div>
+
+
+
+                <div class="botao">
+                    <input type="submit" onclick="logar(); return false" value="Continuar">
+                </div> 
+                
+                <!-- Função do botão -->
+                <script>
+                    function logar(){
+                        var senha = document.getElementById('password').value;
+                
+                        if(senha == '123456'){
+                            alert('Efetue o login');
+                            location.href= "login.html";
+                        }else if(senha == false){
+                            alert("Preencha as informações corretamente")
+                        }else{
+                            alert("ERRO! Está senha já esta sendo utilizada pelo usuário pedrinho18");
+                        }
+                    }
+                </script>
+
+                    
+            </form>
+        </div>  
+    </div>
+    
+
+
+</body>
+
+</html>

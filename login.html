@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+    </style>
+    <link rel="shortcut icon" href="imagem/icon.webp" type="image/x-icon">
+    <title>entrar</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="login">
+            <h1>Entrar</h1>
+
+            <form action="#">
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="password">Senha</label>
+                    <input id="password" type="password" nome="password" placeholder="Digite sua Senha" required>
+                </div>
+
+                
+                <div class="continue-button">
+                    <input type="submit" onclick="entrar(); return false" value="Entrar" >
+                </div>
+
+                <script>
+                    function entrar(){
+                        var senha = document.getElementById('password').value;
+                
+                        if(senha == '123456'){
+                            alert('Seja Bem-vindo!');
+                            location.href= "beneficios.html";
+                        }else{
+                            alert("Preencha as informações corretamente.");
+                        }
+                    }
+                </script>
+
+        </div>
+
+        </form>
+</body>
+
+</html>

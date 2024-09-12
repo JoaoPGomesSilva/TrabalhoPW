@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+   background-image: url(imagem/fundobranco.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+
+.container{
+    /*Centralizar itens*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    /*------------------*/
+}
+
+.titulo{
+    font-size: x-large;
+    text-align: center;
+    padding-top: 5%;
+    color: orange;
+    margin-top: auto;
+}
+
+h1{
+    color: rgb(226, 117, 27);
+    font-family: 'Kaushan Script';
+    font-size: 50px;
+}
+
+.formulario{
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 40px;
+    width: 700px;
+    height: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario form{
+    position: absolute;
+    display: block;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 100px;
+    padding-left: 120px;
+    box-shadow: black;
+    
+  
+}
+
+.grupo-input input{
+
+    display: block;
+    width: 450px;
+    height: 48px;
+    border-radius: 8px;
+    border: thin solid #999;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px
+}
+
+.botao input{
+    width: 100%;
+    margin-top: 12px;
+    border: none;
+    background-color: rgb(226, 117, 27);
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    
+
+}
+
+.botao input:hover{
+    background-color: rgb(226, 117, 27);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.imagem{
+    padding: 0%;
+    margin: 0%;
+    position: relative;
+    width: 40px;
+    margin-top: 35px;
+    margin-left: 320px;
+}
